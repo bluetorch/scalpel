@@ -36,7 +36,7 @@ public class Scalpel {
     }
 
     public String replace(InputStream html, List<Replacement> replacements) throws IOException {
-        Document doc = Jsoup.parse(html, "utf-8", null);
+        Document doc = Jsoup.parse(html, "utf-8", "/");
         return replace(doc, replacements);
     }
 
